@@ -1,0 +1,24 @@
+Career Frequency Offset Estimation (CFO)
+
+Project Description:
+Career Frequency Offset Estimation (CFO) based on the cyclic prefix method. This project aims to provide an efficient estimation of frequency offset in communication systems using the cyclic prefix in received signals.
+
+
+
+Notes:
+This version is not necessarily synthesizable.
+
+Designed using VIVADO 2022.1.
+
+If using a different version of VIVADO, you may need to redesign IPs based on your current version.
+
+A version of this project has also been provided in MATLAB (in live script).
+
+A MATLAB (live) script file for this project has been included in the project. You can use the MATLAB file for data generation.
+
+Features
+Accurate frequency offset estimation
+
+Implementation based on cyclic prefix methodology
+
+Designed for VIVADO 2022.1
