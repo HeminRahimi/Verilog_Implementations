@@ -22,3 +22,8 @@ Accurate frequency offset estimation
 Implementation based on cyclic prefix methodology
 
 Designed for VIVADO 2022.1
+
+
+
+
+![image](https://github.com/user-attachments/assets/84e3e178-b6a0-4a38-a231-6b4ed70f3974)
