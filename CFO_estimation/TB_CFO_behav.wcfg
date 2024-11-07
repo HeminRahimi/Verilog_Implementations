@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_CFO_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_CFO" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,283.678 ns"></ZoomEndTime>
+      <Cursor1Time time="442.928 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="144"></NameColumnWidth>
+      <ValueColumnWidth column_width="77"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="47" />
+   <wvobject fp_name="/TB_CFO/go" type="logic">
+      <obj_property name="ElementShortName">go</obj_property>
+      <obj_property name="ObjectShortName">go</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/Ng" type="array">
+      <obj_property name="ElementShortName">Ng[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Ng[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/nfft" type="array">
+      <obj_property name="ElementShortName">nfft[11:0]</obj_property>
+      <obj_property name="ObjectShortName">nfft[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/cfo" type="array">
+      <obj_property name="ElementShortName">cfo[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cfo[11:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">9</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/cfo_realtime" type="array">
+      <obj_property name="ElementShortName">cfo_realtime[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cfo_realtime[11:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">10</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/cnt_inst/Out" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Out[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="label">Counter[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/mult_inst/real1" type="array">
+      <obj_property name="ElementShortName">real1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">real1[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/neg_img1" type="array">
+      <obj_property name="ElementShortName">neg_img1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">neg_img1[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/mult_inst/real2" type="array">
+      <obj_property name="ElementShortName">real2[8:0]</obj_property>
+      <obj_property name="ObjectShortName">real2[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/mult_inst/imag2" type="array">
+      <obj_property name="ElementShortName">imag2[8:0]</obj_property>
+      <obj_property name="ObjectShortName">imag2[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/mult_inst/real_result" type="array">
+      <obj_property name="ElementShortName">real_result[23:0]</obj_property>
+      <obj_property name="ObjectShortName">real_result[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/mult_inst/imag_result" type="array">
+      <obj_property name="ElementShortName">imag_result[23:0]</obj_property>
+      <obj_property name="ObjectShortName">imag_result[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/adder_inst/Br" type="array">
+      <obj_property name="ElementShortName">Br[23:0]</obj_property>
+      <obj_property name="ObjectShortName">Br[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/adder_inst/Bi" type="array">
+      <obj_property name="ElementShortName">Bi[23:0]</obj_property>
+      <obj_property name="ObjectShortName">Bi[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/adder_inst/Yr" type="array">
+      <obj_property name="ElementShortName">Yr[23:0]</obj_property>
+      <obj_property name="ObjectShortName">Yr[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/adder_inst/Yi" type="array">
+      <obj_property name="ElementShortName">Yi[23:0]</obj_property>
+      <obj_property name="ObjectShortName">Yi[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">17</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/atan_inst/din_tvalid" type="logic">
+      <obj_property name="ElementShortName">din_tvalid</obj_property>
+      <obj_property name="ObjectShortName">din_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/atan_inst/re" type="array">
+      <obj_property name="ElementShortName">re[23:0]</obj_property>
+      <obj_property name="ObjectShortName">re[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">9</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/atan_inst/im" type="array">
+      <obj_property name="ElementShortName">im[23:0]</obj_property>
+      <obj_property name="ObjectShortName">im[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">9</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/atan_inst/dout" type="array">
+      <obj_property name="ElementShortName">dout[23:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[23:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">20</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/atan_inst/dout_tready" type="logic">
+      <obj_property name="ElementShortName">dout_tready</obj_property>
+      <obj_property name="ObjectShortName">dout_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/div_inst/binary_input_data" type="array">
+      <obj_property name="ElementShortName">binary_input_data[23:0]</obj_property>
+      <obj_property name="ObjectShortName">binary_input_data[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/div_inst/binary_output_data" type="array">
+      <obj_property name="ElementShortName">binary_output_data[23:0]</obj_property>
+      <obj_property name="ObjectShortName">binary_output_data[23:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/div_inst/finish" type="logic">
+      <obj_property name="ElementShortName">finish</obj_property>
+      <obj_property name="ObjectShortName">finish</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/cnt_inst/cen" type="logic">
+      <obj_property name="ElementShortName">cen</obj_property>
+      <obj_property name="ObjectShortName">cen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/cnt_inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/cnt_inst/upper_band" type="array">
+      <obj_property name="ElementShortName">upper_band[11:0]</obj_property>
+      <obj_property name="ObjectShortName">upper_band[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/cnt_inst/cntf" type="logic">
+      <obj_property name="ElementShortName">cntf</obj_property>
+      <obj_property name="ObjectShortName">cntf</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_r/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_r/mode" type="logic">
+      <obj_property name="ElementShortName">mode</obj_property>
+      <obj_property name="ObjectShortName">mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_r/address" type="array">
+      <obj_property name="ElementShortName">address[11:0]</obj_property>
+      <obj_property name="ObjectShortName">address[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_r/offset" type="array">
+      <obj_property name="ElementShortName">offset[11:0]</obj_property>
+      <obj_property name="ObjectShortName">offset[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_r/out1" type="array">
+      <obj_property name="ElementShortName">out1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out1[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_r/out2" type="array">
+      <obj_property name="ElementShortName">out2[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out2[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_r/Mem" type="array">
+      <obj_property name="ElementShortName">Mem[0:1279][8:0]</obj_property>
+      <obj_property name="ObjectShortName">Mem[0:1279][8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_i/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_i/mode" type="logic">
+      <obj_property name="ElementShortName">mode</obj_property>
+      <obj_property name="ObjectShortName">mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_i/address" type="array">
+      <obj_property name="ElementShortName">address[11:0]</obj_property>
+      <obj_property name="ObjectShortName">address[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_i/offset" type="array">
+      <obj_property name="ElementShortName">offset[11:0]</obj_property>
+      <obj_property name="ObjectShortName">offset[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_i/out1" type="array">
+      <obj_property name="ElementShortName">out1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out1[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_i/out2" type="array">
+      <obj_property name="ElementShortName">out2[8:0]</obj_property>
+      <obj_property name="ObjectShortName">out2[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/M_i/Mem" type="array">
+      <obj_property name="ElementShortName">Mem[0:1279][8:0]</obj_property>
+      <obj_property name="ObjectShortName">Mem[0:1279][8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M1/P" type="array">
+      <obj_property name="ElementShortName">P[2:0]</obj_property>
+      <obj_property name="ObjectShortName">P[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_CFO/MUT/M2/tmp_out" type="array">
+      <obj_property name="ElementShortName">tmp_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">tmp_out[23:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">21</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+</wave_config>
