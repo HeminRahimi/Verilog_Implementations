@@ -26,10 +26,13 @@ Career Frequency Offset Estimation (CFO) based on the cyclic prefix method. This
 
 
 **Schematic:**
+
+
 ![image](https://github.com/user-attachments/assets/84e3e178-b6a0-4a38-a231-6b4ed70f3974)
 
 
 
 Output:
+
 
 ![image](https://github.com/user-attachments/assets/6415fcc4-e74b-44ea-8b30-e4f1d8f847ae)
