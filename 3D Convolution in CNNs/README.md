@@ -30,7 +30,6 @@ The project implements a hardware module for performing 3D convolution with the 
 │   ├── Eval.m            # MATLAB script for output verification
 ├── Generated_data/       # Directory for generated input/output files
 ├── run.sh                #  Script to automate simulation and verification
-├── report.pdf            # Design report with block diagram, description, and results
 └── README.md             # This file
 ```
 
