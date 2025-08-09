@@ -66,8 +66,3 @@ After downloading the folder,
    - Successful completion shows: `All steps completed successfully with stride=<value>!`.
    - Simulation logs show: `SIMULATION STARTED WITH STRIDE = <value>`.
 
-## Contributing
-This is a student project for educational purposes. Feel free to fork or suggest improvements via pull requests.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
