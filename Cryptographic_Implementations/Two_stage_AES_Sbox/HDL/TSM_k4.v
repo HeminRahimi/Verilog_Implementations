@@ -18,7 +18,7 @@ module  TSM_k4 (clk, PRNG, inp_share0, inp_share1, F0, F1);
     Register #(15) inst_reg_rand_vals (PRNG[14 : 0], clk, reg_rnd);
     Register #(4) inst_reg_inp_share1 (inp_share1_refereshed, clk, inp_sahre1_reg);
             
-    Sop_share0 inst_sum_of_prod0 (gi_reg, hi_out, F0);
-    Sop_share1 inst_sum_of_prod1 (hi_out, reg_rnd, F1);
+    Sop_domain0 inst_sum_of_prod0 (gi_reg, hi_out, F0);
+    Sop_domain1 inst_sum_of_prod1 (hi_out, reg_rnd, F1);
             
 endmodule
