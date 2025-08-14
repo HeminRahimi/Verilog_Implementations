@@ -6,7 +6,9 @@ This folder contains a **first-order masked implementation** of the AES S-Box, d
 ### Key Features:  
 - **First-order masking** for side-channel resistance  
 - **Two-stage architecture** for balanced latency and throughput  
-- **PINI (Probe Isolating Non Interference)** and **OPINI (Output Probe Isolating Non Interference)** compliant  
+- **PINI (Probe Isolating Non Interference)**
+
+Since the latency is 2 clock cycles, the design is also **OPINI (Output Probe Isolating Non Interference)**.
 
 ---
 
