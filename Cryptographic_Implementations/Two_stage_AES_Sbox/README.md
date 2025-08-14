@@ -21,7 +21,5 @@ This implementation is based on:
 <img width="774" height="327" alt="image" src="https://github.com/user-attachments/assets/98ec6bf4-558d-446d-9867-aa92d385fe67" />
 
 
-The nonlinear terms `fₙ(i,j)` for the cross multiplier (highlighted in yellow in the architecture diagram) are generated using:
-
-```cpp
-cpp/cross_multiplier_function_gen.cpp
+The `fₙ(i,j)` terms required to construct the cross multiplier (highlighted in yellow in Fig. 1) are automatically generated using a C++ implementation of Algorithm 1 from the referenced paper, located in
+**cpp/cross_multiplier_function_gen.cpp**.
