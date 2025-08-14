@@ -15,7 +15,7 @@ This implementation is based on:
 
 **Title:** *Higher-Order Time Sharing Masking*  
 **Conference:** CHES 2025  
-**Link:** [https://tches.iacr.org/article/12047](https://eprint.iacr.org/2024/925)  
+**Link:** [https://tches.iacr.org/article/12047](https://tches.iacr.org/index.php/TCHES/article/view/12047)  
 
 ### Architectural Overview  
 <img width="774" height="327" alt="image" src="https://github.com/user-attachments/assets/98ec6bf4-558d-446d-9867-aa92d385fe67" />
