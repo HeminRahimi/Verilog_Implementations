@@ -20,3 +20,8 @@ This implementation is based on:
 ### Architectural Overview  
 <img width="774" height="327" alt="image" src="https://github.com/user-attachments/assets/98ec6bf4-558d-446d-9867-aa92d385fe67" />
 
+
+The nonlinear terms `fₙ(i,j)` for the cross multiplier (highlighted in yellow in the architecture diagram) are generated using:
+
+```cpp
+cpp/cross_multiplier_function_gen.cpp
