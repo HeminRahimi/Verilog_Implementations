@@ -20,7 +20,3 @@ This implementation is based on:
 ### Architectural Overview  
 <img width="774" height="327" alt="image" src="https://github.com/user-attachments/assets/98ec6bf4-558d-446d-9867-aa92d385fe67" />
 
-
-### Security Properties:  
-- **PINI-secure**
-- **OPINI-compliant**
