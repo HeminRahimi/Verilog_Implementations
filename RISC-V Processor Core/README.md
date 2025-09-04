@@ -39,3 +39,48 @@ The design implements the canonical single-cycle datapath. The flow of data is g
 
 <img width="1012" height="783" alt="Screenshot from 2025-09-04 08-07-14" src="https://github.com/user-attachments/assets/8c624546-12dd-470c-982a-fba13c951577" />
 
+
+
+
+## 🧩 Instruction Set Support
+
+The core supports the following instructions from the RV32I set, providing a complete demonstration of the major instruction formats:
+
+| Type | Instruction | Example | Description |
+| :--- | :--- | :--- | :--- |
+| **R-Type** | `add`, `sub`, `and`, `or` | `add x1, x2, x3` | Register-Register Arithmetic |
+| **I-Type** | `addi`, `andi`, `ori`, `lw` | `lw x1, 4(x2)` | Register-Immediate Arithmetic / Load |
+| **S-Type** | `sw` | `sw x1, 8(x2)` | Store Word to Memory |
+| **B-Type** | `beq` | `beq x1, x2, label` | Conditional Branch (Equal) |
+
+## 🔬 Simulation and Testing
+
+### Prerequisites
+- **Icarus Verilog** (`iverilog`) for simulation.
+- **GTKWave** (optional) for viewing waveforms.
+
+### Running the Testbench
+1.  Clone the repository and run the simulation:
+    ```bash
+    git clone https://github.com/your-username/riscv-simple-implementation.git
+    cd riscv-simple-implementation/sim
+    ./run_simulation.sh
+    # Or run manually:
+    iverilog -o simv -I ../src/verilog/core/ ../src/verilog/core/*.v ../src/verilog/testbench/tb_riscv_core.v
+    vvp simv
+    ```
+
+### Test Program
+The test program validates the core functionality by using all supported instruction types and checking the results.
+
+```asm
+    addi x1, x0, 1       # x1 = 1
+    addi x2, x0, 2       # x2 = 2
+    add  x3, x1, x2      # x3 = 1 + 2 = 3 (R-type)
+    addi x5, x0, 5       # x5 = 5 (I-type, base address)
+    sw   x3, 0(x5)       # mem[5] = 3 (S-type)
+    lw   x4, 0(x5)       # x4 = mem[5] = 3 (I-type, load)
+    beq  x3, x4, end     # Branch should be taken (B-type)
+    addi x6, x0, 999     # This instruction should be skipped
+end:
+    addi x7, x0, 25      # x7 = 25
