@@ -8,7 +8,7 @@ module Top (clk, rst);
     wire [6 : 0] instruction_6to0;
 
     DP inst_Datapath (clk, rst, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, AluOp, instruction_6to0);
-    Main_controller inst_Controller (clk, instruction_6to0, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, AluOp);
+    Main_controller inst_Controller (instruction_6to0, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, AluOp);
 
 endmodule
 
