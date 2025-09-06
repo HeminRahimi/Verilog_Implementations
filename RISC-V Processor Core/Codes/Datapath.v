@@ -14,16 +14,28 @@ module DP (clk, rst, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, AluO
 	assign out2CTLR = Instruction[6 : 0];
 
     Instruction_Mem inst_Instruction_memory (rst, PC_out, Instruction);
-	Reg_bank inat_reg_bank (clk, rst, Instruction[19 : 15], Instruction[24 : 20], Instruction[11 : 7], Mux_to_reg_bank_WD, RegWrite, read_data1, read_data2);
-	Imm_gen inst_immidiate_generation (clk, Instruction, imm_out);
-	MUX_2to1 inst_mux_after_reg_bank (read_data2, imm_out, ALUSrc, mux2ALU);
-	ALU_CTRL inst_ALU_CTLR (clk, AluOp, {Instruction[30], Instruction[14 : 12]}, AluCTRL2MainAlu);
-	ALU inst_ALU (read_data1, mux2ALU, AluCTRL2MainAlu, alu_result, Zero_flg);
-	Data_mem inst_DATA_Memory(clk, rst, alu_result, read_data2, MemRead, MemWrite, read_data);
-	MUX_2to1 inst_Mux_after_Data_memory (alu_result, read_data, MemtoReg, Mux_to_reg_bank_WD);
-	PC inst_Program_Counter (clk, rst, pc_in, PC_out);
-	Adder_const4 inst_Add_by4 (PC_out, add_const4_out);
-	MUX_2to1 inst_mux_after_adder (add_const4_out, Adder_out, (Branch & Zero_flg), pc_in);
-	Adder inst_adder (PC_out, imm_out, Adder_out);
 
+	Reg_bank inat_reg_bank (clk, rst, Instruction[19 : 15], Instruction[24 : 20], 
+		Instruction[11 : 7], Mux_to_reg_bank_WD, RegWrite, read_data1, read_data2);
+
+	Imm_gen inst_immidiate_generation (Instruction, imm_out);
+
+	MUX_2to1 inst_mux_after_reg_bank (read_data2, imm_out, ALUSrc, mux2ALU);
+
+	ALU_CTRL inst_ALU_CTLR (AluOp, {Instruction[30], Instruction[14 : 12]}, AluCTRL2MainAlu);
+
+	ALU inst_ALU (read_data1, mux2ALU, AluCTRL2MainAlu, alu_result, Zero_flg);
+
+	Data_mem inst_DATA_Memory(clk, rst, alu_result, read_data2, MemRead, MemWrite, read_data);
+
+	MUX_2to1 inst_Mux_after_Data_memory (alu_result, read_data, MemtoReg, Mux_to_reg_bank_WD);
+
+	PC inst_Program_Counter (clk, rst, pc_in, PC_out);
+
+	Adder_const4 inst_Add_by4 (PC_out, add_const4_out);
+
+	MUX_2to1 inst_mux_after_adder (add_const4_out, Adder_out, (Branch & Zero_flg), pc_in);
+
+	Adder inst_adder (PC_out, imm_out, Adder_out);
+	
 endmodule
