@@ -8,11 +8,12 @@ module Reg_bank(clk, rst, read_reg1, read_reg2, write_reg, write_data, RegWrite,
 		
 		reg [31:0] Mem[0:31] ;
 		
-		always @ (posedge clk) begin
+	always @ (*) begin
 			read_data1 = Mem [read_reg1] ;
 			read_data2 = Mem [read_reg2] ;
-		end
-		always @ (negedge clk) begin    
+	end
+	
+	always @ (posedge clk) begin    
 			  if (RegWrite == 1) begin              
 					Mem[write_reg] <=	write_data ;
 					end
@@ -65,3 +66,4 @@ module Reg_bank(clk, rst, read_reg1, read_reg2, write_reg, write_data, RegWrite,
         */
 		
 endmodule
+
