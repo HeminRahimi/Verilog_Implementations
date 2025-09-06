@@ -79,4 +79,5 @@ The test program validates the core functionality by using all supported instruc
     lw   x4, 0(x5)       # x4 = mem[5] = 3 (I-type, load)
     beq  x3, x4, end     # Branch should be taken (B-type)
     addi x6, x0, 999     # This instruction should be skipped
-
+end:
+    addi x7, x0, 25      # x7 = 25
