@@ -1,6 +1,6 @@
 
-module Data_mem (clock, rst, address, write_data, mem_read, mem_write, read_data);
-		input mem_read, mem_write, clock, rst;
+module Data_mem (clk, rst, address, write_data, mem_read, mem_write, read_data);
+		input mem_read, mem_write, clk, rst;
 		input [31:0] address , write_data ;
 		output [31:0] read_data ;
 		
@@ -10,15 +10,19 @@ module Data_mem (clock, rst, address, write_data, mem_read, mem_write, read_data
 		reg [31:0] Mem [0:255] ;
 		
 		
-		always @ (posedge clock) begin
-				if (mem_read == 1 && mem_write == 0)   
-						temp <= Mem[address] ;
+		always @ (*) begin
+			if (mem_read == 1 && mem_write == 0)
+				temp = Mem[address];
+			else                                               
+				temp = 32'b0;
+		end
+		///
+		always @ (posedge clk) begin
+			if (mem_read == 0 && mem_write == 1)  
+				Mem[address] <= write_data ;
 				
-				else if (mem_read == 0 && mem_write == 1)  
-						Mem[address] <= write_data ;
-				
-				else                                               
-						temp <= 32'b0 ;
+			else                                               
+				temp <= 32'b0 ;
 		end
      
 	   always  @ (rst) begin                      
@@ -57,4 +61,5 @@ module Data_mem (clock, rst, address, write_data, mem_read, mem_write, read_data
 		end
 
 endmodule
+
   
