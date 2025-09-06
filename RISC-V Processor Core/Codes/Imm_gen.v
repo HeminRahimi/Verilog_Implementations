@@ -1,6 +1,5 @@
 module Imm_gen (instr, imm_out);
 
-    input clk;
 	input       [31:0] instr;    
     output reg  [31:0] imm_out;
 
@@ -31,3 +30,4 @@ module Imm_gen (instr, imm_out);
 
 
 endmodule
+
