@@ -1,4 +1,4 @@
-module Imm_gen (clk, instr, imm_out);
+module Imm_gen (instr, imm_out);
 
     input clk;
 	input       [31:0] instr;    
@@ -6,7 +6,7 @@ module Imm_gen (clk, instr, imm_out);
 
     wire [6:0] opcode = instr[6:0];
 
-    always @(posedge clk) begin
+	always @(*) begin
         case (opcode)
                                            
             7'b0010011, 7'b0000011, 7'b1100111:             // I-type Instructions
@@ -28,5 +28,6 @@ module Imm_gen (clk, instr, imm_out);
                 imm_out = 32'b0;
         endcase
     end
+
 
 endmodule
